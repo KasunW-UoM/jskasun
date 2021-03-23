@@ -1,0 +1,177 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>CV form feed</title>
+
+	
+<style type="text/css">
+.auto-style1 {
+	margin-left: 40px;
+}
+.auto-style2 {
+	border: 2px solid #CC3399;
+	background-color: #80ff80;
+}
+.auto-style3 {
+	text-align: center;
+	text-shadow: 1px 1px 5px green;
+	
+}
+.auto-style4 {
+	margin-right: 20px;
+	margin-left:20px;
+}
+.auto-style5 {
+	background-color: #66FF33;
+	border:2px solid #CC3399;
+}
+p{
+	font-family:Arial, Helvetica, sans-serif;
+	color:blue;
+	font-size:15pt;
+}
+</style>
+
+	
+</head>
+
+<body>
+
+<h1 class="auto-style3">Bio Data Form</h1>
+<hr class="auto-style5" style="height: 9px" />
+<p class="auto-style3">&nbsp;</p>
+<script type="text/javascript">
+		var yr = window.prompt("Enter DOB Year:","1995");
+		var d = new Date();
+		var n = d.getFullYear();
+		var yr1 = parseInt(yr);
+		var n1 = parseInt(n);
+		var age = n1-yr;
+		document.writeln("<p>Your age is:"+age+"</p>");
+	</script>
+<form id="form1" runat="server">
+<table class="auto-style2" style="width: 100%; height: 100px" cellpadding="5">
+	<tr>
+		<td style="width: 126px">
+		</td>
+		<td style="width: 629px; ">
+		</td>
+		<td style="width: 235px">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td style="width: 126px">
+		<label>Full Name:</label></td>
+		<td style="width: 629px; ">
+		<input type="text" name="txt1" id="Fname" size="20" style="width: 672px; height: 35px"/></td>
+		<td style="width: 235px;" rowspan="8">
+		<img alt="my photo" height="200" src="photo05.jpg" width="282" class="auto-style4" /></td>
+	</tr>
+	<tr>
+		<td style="width: 126px"><label>Name with initials:</label></td>
+		<td style="width: 629px">
+		<input type="text" name="txt" id="Fname" style="width: 673px; line-height: 50px; height: 32px;"/></td>
+	</tr>
+	<tr>
+		<td style="width: 126px">Date of birth</td>
+		<td style="width: 629px; ">
+		<select name="year" style="width: 66px">
+			<option value="1994">1994</option>
+			<option value="1995">1995</option>	
+			<option value="1996">1996</option>	
+			<option value="1997">1997</option>	
+			<option value="1998">1998</option>	
+			<option value="1999">1999</option>			
+		</select>&nbsp;
+		<select name="month">
+			<option value="1">January</option>
+			<option value="2">February</option>	
+			<option value="3">March</option>	
+			<option value="4">April</option>	
+			<option value="5">May</option>	
+			<option value="6">June</option>			
+			<option value="July">July</option>
+			<option value="Augest">Augest</option>
+			<option value="September">September</option>
+			<option value="November">November</option>
+			<option>December</option>
+		</select>
+		<select name="day">
+			<option selected="selected"  value="1">1</option>
+			<option value="2">2</option>	
+			<option value="3">3</option>	
+			<option value="4">4</option>	
+			<option value="5">5</option>	
+						
+			<option value="7">7</option>
+			<option value="9">9</option>
+			<option value="8">8</option>
+			<option value="10">10</option>
+			<option value="11">11</option>
+			<option value="12">12</option>
+			<option value="13">13</option>
+			<option value="14">14</option>
+			<option value="15">15</option>
+			<option value="16">16</option>
+			<option value="17">17</option>
+			<option value="18">18</option>
+			<option value="19">19</option>
+			<option value="20">20</option>
+			<option value="21">21</option>
+			<option value="22">22</option>
+			<option value="23">23</option>
+			<option value="24">24</option>
+			<option value="25">25</option>
+			<option value="26">26</option>
+			<option value="28">28</option>
+			<option value="29">29</option>
+			<option value="30">30</option>
+			<option value="31">31</option>
+						
+		</select>
+		</td>
+	</tr>
+	<tr>
+		<td style="width: 126px">Gender:</td>
+		<td style="width: 629px; ">
+			<input type="radio" name="sex" id="Male" value="Male"/>Male
+			<input type="radio" name="sex" id="Female" value="Female"/>	Female
+		</td>
+	</tr>
+	<tr>
+		<td style="width: 126px">Sivil Status</td>
+		<td style="width: 629px; ">
+		<input type="radio" name="status" id="Single" value="single"/>Single
+			<input type="radio" name="status" id="Married" value="married"/>Married
+		</td>
+	</tr>
+	<tr>
+		<td style="width: 126px">Digrees</td>
+		<td style="width: 629px; ">
+			<input type="checkbox" name="degree" value="BSc" id="bsc"/>Bsc&nbsp;
+			<input type="checkbox" name="degree" value="MSc" id="msc"/>Msc
+		</td>
+	</tr>
+	<tr>
+		<td style="width: 126px">GPA</td>
+		<td style="width: 629px; "><input type="text" name="gpa" id="gpa"/></td>
+	</tr>
+	<tr>
+		<td style="width: 126px; height: 80px;"></td>
+		<td style="width: 629px; height: 80px;">
+		<input type="submit" value="Submit" style="width: 153px; height: 36px"/> </td>
+	</tr>
+</table>
+	
+		<p class="auto-style1">
+		<label>&nbsp; </label>&nbsp;</p>
+		<hr />
+		<p class="auto-style1">
+		&nbsp;</p>
+	</form>
+	
+</body>
+
+</html>
